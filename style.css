@@ -6,7 +6,6 @@ body {
     padding: 0;
     overflow-x: hidden;
     /* Prevent horizontal scroll */
-
 }
 
 .navbar {
@@ -146,9 +145,6 @@ a {
     color: #ff8c00;
 }
 
-
-
-
 .hero-section {
     display: flex;
     justify-content: center;
@@ -179,7 +175,8 @@ a {
     border-radius: 10px;
     margin-bottom: 20px;
     margin: 0 auto;
-    width: 400px;
+    width: 100%;
+    /* Adjusted to 100% for responsiveness */
     font-size: 10px;
 }
 
@@ -191,12 +188,16 @@ a {
     padding: 20px;
     background-color: #f1ffa5;
     border-radius: 10px;
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
+    /* Ensure it doesn't exceed 700px */
     border: 2px solid #000;
     position: relative;
-    height: 300px;
+    height: auto;
+    /* Adjust to flexible height */
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
-
+    margin: 0 auto;
+    /* Centering */
 }
 
 .hero-title-left {
@@ -225,8 +226,10 @@ a {
     width: 100%;
     padding-bottom: 20px;
     margin-top: auto;
+    flex-wrap: wrap;
+    /* Allow buttons to wrap on smaller screens */
+    justify-content: center;
 }
-
 
 .hero-buttons .btn {
     background-color: #fcd34d;
@@ -247,13 +250,11 @@ a {
 @media (max-width: 768px) {
     .hero-section {
         padding: 100px 20px;
-        padding-left: 200px;
     }
 
     .hero-main-box {
         width: 100%;
         height: auto;
-        padding: 100px;
     }
 
     .hero-title-left {
@@ -278,8 +279,13 @@ a {
 
 @media (max-width: 480px) {
     .hero-main-box {
-        width: 100%;
+        width: 120%;
         padding: 10px;
+        margin-left: 30px;
+    }
+
+    .contract-info {
+        margin-left: 85px;
     }
 
     .hero-doodle-right {
@@ -298,6 +304,7 @@ a {
     .hero-image-above {
         width: 500px;
         top: -350px;
+        margin-left: 100px;
     }
 
     .hero-intro {
@@ -368,7 +375,6 @@ a {
     text-align: center;
 }
 
-
 .about-image {
     width: 100%;
     padding: 10px;
@@ -390,28 +396,28 @@ a {
     }
 
     .about-image {
-        width: 48%;
-        padding: 0;
-        margin-left: 10px;
+        display: none;
     }
 }
 
 @media (max-width: 480px) {
     .about-section {
-        flex-direction: column;
+        flex-direction: row;
         padding: 20px;
+
+    }
+
+    .about-container {
+        width: 800px;
     }
 
     .about-text-box {
-        width: 1000%;
         margin-bottom: 20px;
-        margin-left: 0px;
+        width: 500px;
     }
 
     .about-image {
-        width: 600%;
-        max-width: 1000%;
-        margin-bottom: 20px;
+        display: none;
     }
 }
 
@@ -434,7 +440,6 @@ a {
     gap: 20px;
 }
 
-
 .how-to-buy-title-box,
 .how-to-buy-icon-box {
     display: flex;
@@ -442,7 +447,6 @@ a {
     align-items: center;
     height: auto;
 }
-
 
 .how-to-buy-title-box {
     background-color: rgba(252, 211, 77, 0.6);
@@ -465,7 +469,6 @@ a {
     width: 38%;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
-    /* Drop shadow */
     border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -491,7 +494,6 @@ a {
     border-radius: 10px;
     transition: transform 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-
 }
 
 .step:hover {
@@ -532,7 +534,7 @@ a {
 @media (max-width: 480px) {
     .how-to-buy-section {
         padding: 50px 10px;
-        margin-left: 90px;
+        margin-left: 70px;
         width: 100%;
     }
 
@@ -665,7 +667,7 @@ a {
     .tokenomics-box {
         min-height: 400px;
         width: 120%;
-        margin-left: 34px;
+        margin-left: 20px;
     }
 
     .tokenomics-box h2 {
@@ -687,7 +689,6 @@ a {
     }
 }
 
-/* Title Box */
 .title-box {
     background-color: #f1ffa5;
     border: 3px solid #000;
@@ -695,16 +696,12 @@ a {
     padding: 10px 20px;
     display: flex;
     justify-content: center;
-    /* Centering the title */
     align-items: center;
     position: relative;
     width: fit-content;
-    /* Make the box width just fit the content */
     max-width: 80%;
-    /* Prevent the box from becoming too wide on larger screens */
     margin: 0 auto;
     margin-bottom: 60px;
-    /* Center the box horizontally */
 }
 
 .title-box h1 {
@@ -725,7 +722,6 @@ a {
     right: 10px;
 }
 
-/* Meme Grid Styles */
 .meme-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -733,10 +729,8 @@ a {
     justify-content: center;
     align-items: center;
     max-width: 1000px;
-    /* Adjust max width to center the grid */
     margin: 0 auto;
     margin-bottom: 80px;
-
 }
 
 .meme-item {
@@ -746,8 +740,6 @@ a {
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     width: 100%;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
-    /* Ensuring full width for responsiveness */
 }
 
 .meme-item img {
@@ -756,7 +748,6 @@ a {
     display: block;
 }
 
-/* Responsive Adjustments */
 @media (max-width: 768px) {
     .title-box h1 {
         font-size: 30px;
@@ -764,10 +755,8 @@ a {
 
     .meme-grid {
         grid-template-columns: repeat(2, 1fr);
-        /* 2 columns for smaller screens */
         gap: 15px;
         max-width: 600px;
-        /* Adjust grid width */
     }
 
     .meme-item img {
@@ -776,15 +765,20 @@ a {
 }
 
 @media (max-width: 480px) {
+
+    .title-box {
+        width: 100%;
+        margin-left: 110px;
+    }
+
     .title-box h1 {
-        font-size: 24px;
+        font-size: 44px;
     }
 
     .meme-grid {
         grid-template-columns: 1fr;
-        /* 1 column for mobile screens */
-        max-width: 300px;
-        /* Further reduce grid width */
+        width: 400px;
+        margin-left: 100px;
     }
 
     .meme-item {
@@ -792,14 +786,12 @@ a {
     }
 }
 
-
 .main-buttons-section {
     background-color: #b29431;
     padding: 20px;
     text-align: center;
     border-top: 3px solid #000;
     border-bottom: 3px solid #000;
-
 }
 
 .buttons-with-images-container {
@@ -817,7 +809,6 @@ a {
 .buttons-box {
     display: flex;
     gap: 20px;
-
 }
 
 .btn-social {
@@ -838,44 +829,39 @@ a {
     transform: scale(1.05);
 }
 
-/* Responsive Styles */
 @media (max-width: 768px) {
     .buttons-with-images-container {
         flex-direction: column;
-        /* Stack the images and buttons vertically */
         gap: 20px;
-        /* Reduce the gap between items */
+    }
+
+    .main-buttons-section {
+        padding: 10px;
+        width: 585px;
     }
 
     .side-image {
         width: 200px;
-        /* Reduce image size */
     }
 
     .btn-social {
         padding: 20px 40px;
-        /* Reduce button padding */
         font-size: 24px;
-        /* Adjust font size */
     }
 }
 
 @media (max-width: 480px) {
     .buttons-with-images-container {
         gap: 15px;
-        /* Further reduce the gap for smaller screens */
     }
 
     .side-image {
         width: 150px;
-        /* Further reduce image size */
     }
 
     .btn-social {
         padding: 15px 30px;
-        /* Further reduce button padding */
         font-size: 20px;
-        /* Adjust font size */
     }
 }
 
