@@ -82,6 +82,41 @@ a {
     background-color: #ff8c00;
 }
 
+@media (max-width: 768px) {
+    .navbar-container {
+        padding: 0 20px;
+        margin-left: 0;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .btn-buy {
+        padding: 15px 30px;
+        font-size: 20px;
+        margin-right: 0;
+    }
+
+    .logo-text {
+        font-size: 40px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .navbar {
+        padding: 20px 85px;
+    }
+
+    .logo-container {
+        justify-content: flex-start;
+    }
+
+    .btn-buy {
+        margin-left: auto;
+    }
+}
+
 .hero-intro {
     text-align: center;
     margin-bottom: 40px;
@@ -90,20 +125,17 @@ a {
 
 .hero-intro h2 {
     font-size: 50px;
-    /* You can adjust the size as needed */
     color: #000;
 }
 
 .hero-intro h1 {
     font-size: 120px;
-    /* You can adjust the size as needed */
     margin: 10px 0;
     color: #000;
 }
 
 .hero-intro p {
     font-size: 40px;
-    /* Adjust this as needed */
     color: #000;
 }
 
@@ -111,23 +143,7 @@ a {
     color: #ff8c00;
 }
 
-.glow-circle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 500px;
-    /* Adjust circle size */
-    height: 500px;
-    background-color: rgba(255, 165, 0, 0.5);
-    /* Glow color */
-    border-radius: 50%;
-    filter: blur(60px);
-    /* Adjust glow intensity */
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    overflow: visible;
-    /* Keeps it behind the text */
-}
+
 
 
 .hero-section {
@@ -151,7 +167,6 @@ a {
     transform: translateX(-50%);
     width: 600px;
     z-index: -1;
-    /* Behind other elements */
 }
 
 .contract-info {
@@ -226,6 +241,86 @@ a {
     background-color: #ff8c00;
 }
 
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 100px 20px;
+        padding-left: 200px;
+    }
+
+    .hero-main-box {
+        width: 100%;
+        height: auto;
+        padding: 100px;
+    }
+
+    .hero-title-left {
+        font-size: 60px;
+        padding-left: 10px;
+    }
+
+    .hero-doodle-right {
+        width: 100px;
+    }
+
+    .hero-buttons .btn {
+        padding: 15px 30px;
+        font-size: 18px;
+    }
+
+    .hero-image-above {
+        width: 300px;
+        top: -200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-main-box {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .hero-doodle-right {
+        width: 100px;
+    }
+
+    .hero-title-left {
+        font-size: 80px;
+    }
+
+    .hero-buttons .btn {
+        padding: 10px 20px;
+        font-size: 16px;
+    }
+
+    .hero-image-above {
+        width: 500px;
+        top: -350px;
+    }
+
+    .hero-intro {
+        margin-bottom: 200px;
+        margin-left: 150px;
+    }
+
+    .hero-intro h2 {
+        font-size: 50px;
+        color: #000;
+        text-align: center;
+    }
+
+    .hero-intro p {
+        font-size: 40px;
+        color: #000;
+        margin-left: 50px;
+    }
+
+    .hero-intro h1 {
+        font-size: 120px;
+        margin: 10px 0;
+        margin-left: 5px;
+        color: #000;
+    }
+}
 
 .about-section {
     background-color: #F9F2D8;
@@ -276,6 +371,46 @@ a {
     padding: 10px;
 }
 
+@media (max-width: 768px) {
+    .about-section {
+        padding: 50px;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    .about-text-box {
+        width: 48%;
+        padding: 20px;
+        max-width: none;
+    }
+
+    .about-image {
+        width: 48%;
+        padding: 0;
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-section {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .about-text-box {
+        width: 1000%;
+        margin-bottom: 20px;
+        margin-left: 0px;
+    }
+
+    .about-image {
+        width: 600%;
+        max-width: 1000%;
+        margin-bottom: 20px;
+    }
+}
 
 .how-to-buy-section {
     padding: 100px 20px;
@@ -303,17 +438,14 @@ a {
     justify-content: center;
     align-items: center;
     height: auto;
-    /* Remove any fixed height */
 }
 
 
 .how-to-buy-title-box {
     background-color: rgba(252, 211, 77, 0.6);
-    /* Light yellow box */
     width: 60%;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
-    /* Drop shadow */
     border-radius: 10px;
     height: auto;
     border: 2px solid #000;
@@ -327,7 +459,6 @@ a {
 
 .how-to-buy-icon-box {
     background-color: #87CEFA;
-    /* Light blue box */
     width: 38%;
     padding: 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
@@ -375,6 +506,49 @@ a {
     margin: 10px 0 0;
 }
 
+@media (max-width: 768px) {
+    .how-to-buy-header {
+        flex-direction: row;
+    }
+
+    .how-to-buy-title-box,
+    .how-to-buy-icon-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .how-to-buy-title-box h2 {
+        font-size: 36px;
+    }
+
+    .how-to-buy-icon {
+        width: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .how-to-buy-section {
+        padding: 50px 10px;
+        margin-left: 90px;
+        width: 100%;
+    }
+
+    .how-to-buy-title-box h2 {
+        font-size: 28px;
+    }
+
+    .how-to-buy-icon {
+        width: 120px;
+    }
+
+    .step h3 {
+        font-size: 24px;
+    }
+
+    .step p {
+        font-size: 18px;
+    }
+}
 
 .tokenomics-section {
     padding: 100px 60px;
@@ -394,11 +568,9 @@ a {
     margin: 0 auto;
     height: auto;
     min-height: 600px;
-    /* Increased height for more space */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* Ensures title is at the top, details at the bottom */
 }
 
 .tokenomics-background {
@@ -408,10 +580,8 @@ a {
     width: 100%;
     height: 50%;
     z-index: 0;
-    /* Adjust this for more transparency */
     border-radius: 20px;
     background: url('path-to-your-image') no-repeat center/contain;
-    /* Replace with your image path */
 }
 
 .tokenomics-box h2 {
@@ -426,9 +596,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
-    /* Align items at the bottom */
     padding-bottom: 30px;
-    /* Add spacing at the bottom */
 }
 
 .tokenomics-detail {
@@ -460,8 +628,62 @@ a {
     color: #000;
 }
 
+@media (max-width: 768px) {
+    .tokenomics-box {
+        padding: 30px;
+        min-height: 500px;
+        width: 100%;
+    }
 
-/* Main Buttons Section */
+    .tokenomics-box h2 {
+        font-size: 50px;
+    }
+
+    .tokenomics-details-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .tokenomics-detail {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .tokenomics-icon-outside {
+        display: none;
+    }
+
+    .tokenomics-detail p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .tokenomics-box {
+        min-height: 400px;
+        width: 120%;
+        margin-left: 34px;
+    }
+
+    .tokenomics-box h2 {
+        font-size: 40px;
+        margin-top: 10px;
+    }
+
+    .tokenomics-detail {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .tokenomics-icon-outside {
+        display: none;
+    }
+
+    .tokenomics-detail p {
+        font-size: 18px;
+    }
+}
+
 .main-buttons-section {
     background-color: #b29431;
     padding: 20px;
@@ -511,4 +733,20 @@ a {
 .footer-section {
     padding: 80px 0;
     text-align: center;
+}
+
+@media (max-width: 768px) {
+    .main-buttons-section {
+        display: none;
+    }
+
+    .footer-section {
+        padding: 40px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer-section {
+        padding: 20px 0;
+    }
 }
